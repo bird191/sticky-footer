@@ -1,0 +1,206 @@
+.miniimg{
+ width: 30px;
+}
+.lefthand{
+  display: flex;
+  flex-direction: row;
+}
+.minimalista{
+  padding-top: 5px;
+}
+.righthand{
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom:36px;
+}
+button{
+  display: none;
+}
+.linkr{
+  padding-right: 25px;
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h1{
+  margin: 0;
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+}
+.cards img,.cards p,.cards h3,.card-img{
+  width: 100%;
+}
+.ourteamg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.people{
+  display: flex;
+  justify-content: center;
+  margin-top:20px;
+  gap: 20px;
+  width: 100%;
+  max-width:1000px;
+  margin: auto;
+}
+.peoples{
+  display: flex;
+  flex-direction: column;
+}
+.team{
+  width: 100%;
+}
+.peoples div{
+  position: relative;
+  bottom: 50px;
+}
+.logos{
+  width:20px;
+}
+footer{
+  background-color: #282828;
+}
+footer img{
+  width: 15px;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  color: white;
+  width: 100%;
+}
+.info{
+  display: flex;
+  justify-content: center;
+  gap:40px;
+}
+.infotitle{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.info p{
+  color:  #777;
+  display: flex;
+  justify-content: center;
+}
+.job{
+  position: relative;
+  bottom: 40px;
+}
+.title p{
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 30px;
+}
+.copyright{
+  color:  #777;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+@media (max-width:1023px) {
+  .people{
+    flex-wrap: wrap;
+  }
+  .peoples{
+    width: 40%;
+  }
+  .cards{
+    flex-direction: column;
+  }
+  .card-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .card-text{
+    width: 100%;
+  }
+@media (max-width:767px) {
+  .title p{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+  .cards{
+    flex-direction:column;
+    text-align: center;
+  }
+  .card-item{
+    flex-direction: column;
+    align-items: center;
+  }
+  .people{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .menu{
+    order:-1;
+  }
+  .menu ul{
+    max-height: 0;
+    overflow: hidden;
+    transform: translateX(90);
+    transition: all 0.5s;
+  }
+  .info p, .infotitle{
+    width: 100%;
+  }
+  [aria-controls="righthand"]{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:10px ;
+  }
+  [aria-expanded="true"]~ ul{
+    display: grid;
+    max-height: 500px;
+    transform: rotateX(0);
+  }
+  [aria-expanded="false"] .close{
+    display: none; 
+  }
+  [aria-expanded="true"] .close{
+    display: inline-block; 
+  }
+  [aria-expanded="true"] .open{
+    display: none; 
+  }
+  .linkr{
+    display: none;
+  }
+  .peoples h4{
+    text-align: center;
+    width: 100%;
+  }
+  .peoples{
+    width: 100%;
+  }
+  .info{
+    flex-direction: column;
+    align-items: center;
+    gap:0px;
+  }
+  .social{
+    font-size: 0;
+    margin: auto;
+
+  }
+  .social img{
+    width: 50px;
+    padding: 10px;
+  }
+}
+}
